@@ -1002,8 +1002,9 @@ html.overflow-hidden body {
     font-size: 1.7rem;
     line-height: 1.4;
     margin-bottom: .5rem; }
-    .statistic-list li > span:last-child {
-      color: #e97f30; }
+    .statistic-list li > a {
+      color: #e97f30;
+      text-decoration: none; }
 
 .st-reserve {
   font-size: 2rem;

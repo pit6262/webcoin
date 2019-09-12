@@ -50,6 +50,11 @@ $(function(){
 		$('.navbar-mobile').toggleClass('is-open')
 	})
 
+	$('.navbar-mobile .navbar-menu__link').on('click', function(){
+		$('.menu-toggle').removeClass('is-active');
+		$('.navbar-mobile').removeClass('is-open')
+	})
+
 	$('.accordion__head').on('click', function(){
 		var el = $(this);
 		var elNext = $(this).next();
@@ -77,6 +82,13 @@ $(function(){
 	  }
 	});
 	$( "#amount" ).val( $( "#slider" ).slider( "value" ) );
+
+	$('a.anchor').bind('click.smoothscroll',function () {
+		var target = $(this).attr('href'),
+            bl_top = $(target).offset().top;
+		$('body,html').animate({scrollTop: bl_top}, 900);
+		return false;
+	});
 
 
 });
