@@ -45,6 +45,10 @@ $(function(){
 		$(this).toggleClass('is-active');
 		$('.sidebar').toggleClass('is-open')
 	})
+	$('.menu-toggle').on('click', function(){
+		$(this).toggleClass('is-active');
+		$('.navbar-mobile').toggleClass('is-open')
+	})
 
 	$('.accordion__head').on('click', function(){
 		var el = $(this);
@@ -55,4 +59,24 @@ $(function(){
 		el.toggleClass('open');
 		return false;
 	});
+
+   
+
+    var handle = $( "#custom-handle" );
+	$( "#slider" ).slider({
+		range: "min",
+		value: 100,
+		min: 100,
+		max: 50000,
+	  // create: function() {
+	  //   handle.text( $( this ).slider( "value" ) );
+	  // },
+	  slide: function( event, ui ) {
+	    // handle.text( ui.value );
+	    $( "#amount" ).val( ui.value );
+	  }
+	});
+	$( "#amount" ).val( $( "#slider" ).slider( "value" ) );
+
+
 });

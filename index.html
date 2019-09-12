@@ -7,9 +7,10 @@
 	<title>Название проекта - Главная</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css?ver1.0" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css?ver1.0" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css?ver1.0" />
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 </head>
-<body class="loaded">
+<body class="loaded home-page">
 
 
 <!-- BEGIN BODY -->
@@ -22,7 +23,26 @@
 				<a href="#"><img src="img/logo.png?ver1.0" alt=""></a>
 			</div>
 			<div class="header__navbar">
-				<div class="user ">
+				<nav class="navbar">
+					<ul class="navbar-menu">
+						<li class="navbar-menu__item">
+							<a href="#" class="navbar-menu__link">Главная</a>
+						</li>
+						<li class="navbar-menu__item">
+							<a href="#" class="navbar-menu__link">О проекте</a>
+						</li>
+						<li class="navbar-menu__item">
+							<a href="#" class="navbar-menu__link">Калькулятор прибыли</a>
+						</li>
+						<li class="navbar-menu__item">
+							<a href="#" class="navbar-menu__link">Контакты</a>
+						</li>
+						<li class="navbar-menu__item">
+							<a href="#" class="navbar-menu__button">Личный кабинет</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="user">
 					<div class="user__name"><svg class="icon icon-man-user"><use xlink:href="#icon-man-user"></use></svg> Иван Петров</div>
 					<div class="user__cross">
 						<svg class="icon icon-cross"><use xlink:href="#icon-cross"></use></svg>
@@ -35,57 +55,164 @@
 			</div>
 		</div>
 	</header>
+	
+	<nav class="navbar-mobile">
+		<ul class="navbar-menu">
+			<li class="navbar-menu__item">
+				<a href="#" class="navbar-menu__link">Главная</a>
+			</li>
+			<li class="navbar-menu__item">
+				<a href="#" class="navbar-menu__link">О проекте</a>
+			</li>
+			<li class="navbar-menu__item">
+				<a href="#" class="navbar-menu__link">Калькулятор прибыли</a>
+			</li>
+			<li class="navbar-menu__item">
+				<a href="#" class="navbar-menu__link">Контакты</a>
+			</li>
+			<li class="navbar-menu__item">
+				<a href="#" class="navbar-menu__button">Личный кабинет</a>
+			</li>
+		</ul>
+	</nav>
 	<!-- HEADER EOF   -->
 
 	<!-- BEGIN CONTENT -->
-	<main class="main main--full">
+	<main class="main">
+		<section class="main-header">
+			
+			<div class="container">
+				<button class="menu-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="row gutters-40">
+					<div class="col-md-7 col-xl-6 ">
+						<div class="main-header-bg-mobile">
+							<h1 class="main-header__title">WEB-COIN.PRO</h1>
+							<p class="main-header__descr">Система, которая платит вам деньги каждую секунду</p>
+
+							<div class="video mt30">
+								<iframe width="100%" height="100%" src="https://www.youtube.com/embed/DkI-sDYKg8Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<p class="watch-video mt30">ПОСМОТРИ ВИДЕО</p>
+						</div>
+					</div>
+					<div class="col-md-5 offset-xl-1 ">
+						<div class="statistic-bg"></div>
+						<div class="statistic">
+							<div class="statistic__title">Наша статистика</div>
+							<ul class="statistic-list">
+								<li><span>Пользователей:</span><span>1 311 чел.</span></li>
+								<li><span>За 24 часа:</span><span>54 чел.</span></li>
+								<li><span>Сейчас on-line:</span><span>7 чел.</span></li>
+								<li><span>Выплачено:</span><span>876 9477</span></li>
+							</ul>
+							<div class="text-center mt30">
+								<p class="st-reserve">Резерв проекта</p>
+								<p class="st-summ">232 1009 </p>
+								<a href="#" class="btn">ЗАРЕГЕСТРИРОВАТЬСЯ</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="our-services">
+			<div class="container">
+				<h2 class="section-title">Как начать?</h2>
+				<p>Для того чтобы начать получать деньги, нужно сделать три простых шага:</p>
+
+				<div class="row services">
+					<div class="col-md-4 services__item">
+						<svg class="icon icon-finish-line"><use xlink:href="#icon-finish-line"></use></svg>
+						<h4>ЗАРЕГИСТРИРУЙТЕ АККАУНТ</h4>
+						<p>Пройдите простую процедуру регистрации, ознакомьтесь с правилами сайта.</p>
+					</div>
+					<div class="col-md-4 services__item">
+						<svg class="icon icon-trophy"><use xlink:href="#icon-trophy"></use></svg>
+						<h4>ПОЛУЧАЙТЕ БОНУС В ЛЮБОЕ УДОБНОЕ ВРЕМЯ</h4>
+						<p>Нажмите кнопку "Перевести на баланс". <br>Минимальная сумма выплаты - 2 рубля!.</p>
+					</div>
+					<div class="col-md-4 services__item">
+						<svg class="icon icon-motivated"><use xlink:href="#icon-motivated"></use></svg>
+						<h4>ПОЛУЧАЙТЕ ВЫПЛАТЫ</h4>
+						<p>Укажите свой кошелек и сделайте выплату! <br>Мы выплачиваем на webmoney, yandex, qiwi, payeer, банковские карты</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section-calculator">
+			<div class="container">
+				<h2 class="section-title">Калькулятор прибыли</h2>
+
+				<div class="slider-range-wrap ">
+					<div id="slider">
+					  <div id="custom-handle" class="ui-slider-handle"></div>
+					</div>
+				
+					<p class="mb40	">
+					  <label for="amount" class="slider-range-wrap__label">Сумма</label>
+					  <input type="text" id="amount" class="form-input" readonly style="border:0; ">
+					</p>
+					<p class="bs-descr ">Ваша скорость увеличится на: <a href="#">0.00257202 монет в секунду</a></p>
+				</div>
+				<div class="row align-items-center gutters-40">
+					<div class="col-xl-5  col-lg-6 ">
+						<div class="calculator-block">
+							<div class="calculator-block__item">
+								<span><svg class="icon icon-check-box"><use xlink:href="#icon-check-box"></use></svg> Прибыль за 1 день:</span>
+								<span>1111.11 <small>монет</small></span>
+							</div>
+							<div class="calculator-block__item">
+								<span><svg class="icon icon-check-box"><use xlink:href="#icon-check-box"></use></svg> Прибыль за 1 месяц:</span>
+								<span>33333.33 <small>монет</small></span>
+							</div>
+							<div class="calculator-block__item">
+								<span><svg class="icon icon-check-box"><use xlink:href="#icon-check-box"></use></svg> Прибыль за 3 месяца:</span>
+								<span>100000.00 <small>монет</small> </span>
+							</div>
+							<div class="calculator-block__item">
+								<span><svg class="icon icon-check-box"><use xlink:href="#icon-check-box"></use></svg> Прибыль за 6 месяцев:</span>
+								<span>200000.00 <small>монет</small> </span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-5 offset-xl-2 col-lg-6 ">
+						<div class="calculator-block">
+							<div class="calculator-block__item">
+								<span>Прибыльность:</span>
+								<span>2.22% в день</span>
+							</div>
+							<div class="calculator-block__item">
+								<span>Окупаемость:</span>
+								<span>45 дней</span>
+							</div>
+							<div class="calculator-block__item calculator-block__item--full">
+								<span>Партнерская программа:</span>
+								<span>5% - 4% - 3% - 2% - 1%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="size-xl hidden-sm mt40"><em>Скорость покупается навсегда и может быть увеличена в любое время сколько угодно раз.</em></p>
+			</div>
+		</section>
+		<section class="section-base">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-8">
+						<h3 class="color-danger">Для связи с технической поддержкой перейдите по вкладке "Служба поддержки" в меню вашего аккаунта. </h3>
+						<p class="size-xl weight-600">Для связи без регистрации на сайте используйте e-mail: <br>support@web-coin.pro </p>
+					</div>
+				</div>
+				
+			</div>
+		</section>
 		
-		<div class="container">
-			<button class="sidebar-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-			<div class="sidebar">
-				<div class="user">
-					<div class="user__name"><svg class="icon icon-man-user"><use xlink:href="#icon-man-user"></use></svg> Иван Петров</div>
-				</div>
-				<div class="balance">
-					<div class="balance__text">Ваш баланс:</div>
-					<a href="#" class="balance__summ">0.00 рублей</a>
-				</div>
-				<ul class="sidebar-menu">
-					<li class="sidebar-menu__item">
-						<a href="#" class="sidebar-menu__link"><svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg> Ваш бонус</a>
-					</li>
-					<li class="sidebar-menu__item">
-						<a href="#" class="sidebar-menu__link"><svg class="icon icon-stopwatch"><use xlink:href="#icon-stopwatch"></use></svg> Увеличить скорость</a>
-					</li>
-					<li class="sidebar-menu__item">
-						<a href="#" class="sidebar-menu__link"><svg class="icon icon-id-card"><use xlink:href="#icon-id-card"></use></svg> Заказать выплату</a>
-					</li>
-					<li class="sidebar-menu__item">
-						<a href="#" class="sidebar-menu__link"><svg class="icon icon-users"><use xlink:href="#icon-users"></use></svg> Партнерская программа</a>
-					</li>
-					<li class="sidebar-menu__item">
-						<a href="#" class="sidebar-menu__link"><svg class="icon icon-share"><use xlink:href="#icon-share"></use></svg> История операций</a>
-					</li>
-					<li class="sidebar-menu__item">
-						<a href="#" class="sidebar-menu__link"><svg class="icon icon-call"><use xlink:href="#icon-call"></use></svg> Служба поддержки</a>
-					</li>
-					<li class="sidebar-menu__item">
-						<a href="#" class="sidebar-menu__link"><svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg> Вопрос/Ответ</a>
-					</li>
-					<li class="sidebar-menu__item">
-						<a href="#" class="sidebar-menu__link"><svg class="icon icon-power"><use xlink:href="#icon-power"></use></svg> Выход</a>
-					</li>
-				</ul>
-			</div>
-			<div class="content">
-				<h1 class="content-title">Ответы на часто задаваемые вопросы</h1>
-				<p class="content-text"><strong>Нажмите чтобы увидеть ответ</strong></p>
-			</div>
-		</div>
 		
 	</main>
 	<!-- CONTENT EOF   -->
@@ -153,6 +280,10 @@
 
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>
+	<symbol id="icon-check-box" viewBox="0 0 32 32">
+	<title>check-box</title>
+	<path d="M8.711 12.622l-2.489 2.489 8 8 17.778-17.778-2.489-2.489-15.289 15.289-5.511-5.511zM28.444 28.444h-24.889v-24.889h17.778v-3.556h-17.778c-1.956 0-3.556 1.6-3.556 3.556v24.889c0 1.956 1.6 3.556 3.556 3.556h24.889c1.956 0 3.556-1.6 3.556-3.556v-14.222h-3.556v14.222z"></path>
+	</symbol>
 	<symbol id="icon-down-chevron" viewBox="0 0 32 32">
 	<title>down-chevron</title>
 	<path d="M27.314 4.686c-3.022-3.022-7.040-4.686-11.314-4.686s-8.292 1.664-11.314 4.686c-3.022 3.022-4.686 7.040-4.686 11.314s1.664 8.292 4.686 11.314c3.022 3.022 7.040 4.686 11.314 4.686s8.292-1.664 11.314-4.686c3.022-3.022 4.686-7.040 4.686-11.314s-1.664-8.292-4.686-11.314zM16 30.021c-7.731 0-14.021-6.29-14.021-14.021s6.29-14.021 14.021-14.021 14.021 6.29 14.021 14.021-6.29 14.021-14.021 14.021z"></path>
@@ -306,6 +437,8 @@
 	<div class="ball c"></div>
 </div>
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.min.js?ver1.0"></script>
+<script src="js/jquery.ui.touch-punch.js?ver1.0"></script>
 <script src="js/custom.js?ver1.0"></script>
 
 </body>
